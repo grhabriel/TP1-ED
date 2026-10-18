@@ -1,0 +1,25 @@
+# Executáveis e arquivos compilados
+bin/*
+!bin/.gitkeep
+
+# Arquivos objeto
+obj/*
+!obj/.gitkeep
+*.o
+*.out
+
+# Arquivos de depuração e temporários
+*.dSYM/
+*.gch
+core
+
+# IDEs e editores
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
