@@ -108,3 +108,28 @@ int pilha_contem_item(const Pilha *pilha, int id_item) {
     }
     return 0;
 }
+
+int pilha_obter_itens(const Pilha *pilha, Item ***itens_saida) {
+    if (itens_saida == NULL) {
+        return 0;
+    }
+    *itens_saida = NULL;
+    if (pilha == NULL || pilha->tamanho == 0) {
+        return 0;
+    }
+
+    Item **vetor = (Item **)malloc(sizeof(Item *) * pilha->tamanho);
+    if (vetor == NULL) {
+        return 0;
+    }
+
+    int idx = 0;
+    CelulaPilha *atual = pilha->topo;
+    while (atual != NULL) {
+        vetor[idx++] = atual->item;
+        atual = atual->abaixo;
+    }
+
+    *itens_saida = vetor;
+    return pilha->tamanho;
+}

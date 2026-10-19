@@ -4,7 +4,7 @@
 #include "item.h"
 
 /*
- * Declaração da Pilha (representa a build do aventureiro).
+ * Declaração opaca do TAD Pilha (representa a build do aventureiro).
  */
 typedef struct Pilha Pilha;
 
@@ -53,5 +53,12 @@ int tamanho_pilha(const Pilha *pilha);
  * Retorna 1 se o item estiver equipado e 0 caso contrário.
  */
 int pilha_contem_item(const Pilha *pilha, int id_item);
+
+/*
+ * Aloca em *itens_saida um array com os ponteiros de todos os itens presentes na pilha
+ * (do topo para a base) e retorna a quantidade de itens.
+ * O chamador deve liberar *itens_saida com free() caso o retorno seja > 0.
+ */
+int pilha_obter_itens(const Pilha *pilha, Item ***itens_saida);
 
 #endif // PILHA_H
