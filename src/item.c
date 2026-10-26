@@ -1,6 +1,6 @@
 #include <stdlib.h>
-#include "item.h"
-#include "util.h"
+#include "../include/item.h"
+#include "../include/util.h"
 
 Item *criar_item(int id, const char *nome) {
     if (nome == NULL) {

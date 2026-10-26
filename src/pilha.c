@@ -1,5 +1,5 @@
 #include <stdlib.h>
-#include "pilha.h"
+#include "../include/pilha.h"
 
 /*
  * Célula interna da pilha encadeada.

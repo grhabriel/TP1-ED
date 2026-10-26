@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <math.h>
-#include "catalogo.h"
+#include "../include/catalogo.h"
 
 /* =========================================================================
  * Estruturas Internas - Modo L: Lista Cruzada

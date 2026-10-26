@@ -2,14 +2,14 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include "atributo.h"
-#include "item.h"
-#include "aventureiro.h"
-#include "pilha.h"
-#include "fila.h"
-#include "catalogo.h"
-#include "ordenacao.h"
-#include "util.h"
+#include "../include/atributo.h"
+#include "../include/item.h"
+#include "../include/aventureiro.h"
+#include "../include/pilha.h"
+#include "../include/fila.h"
+#include "../include/catalogo.h"
+#include "../include/ordenacao.h"
+#include "../include/util.h"
 
 typedef struct {
     char nome[32];

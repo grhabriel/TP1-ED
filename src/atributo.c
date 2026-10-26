@@ -1,6 +1,6 @@
 #include <stdlib.h>
-#include "atributo.h"
-#include "util.h"
+#include "../include/atributo.h"
+#include "../include/util.h"
 
 Atributo *criar_atributo(int id, const char *nome) {
     if (nome == NULL) {

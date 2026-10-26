@@ -23,3 +23,14 @@ core
 # Sistema operacional
 .DS_Store
 Thumbs.db
+
+*pdf
+*tex
+*.sh
+*.bib
+*py
+__pycache__/*
+__pycache__
+graficos/*
+graficos
+.gitignore

@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include <math.h>
-#include "ordenacao.h"
-#include "util.h"
+#include "../include/ordenacao.h"
+#include "../include/util.h"
 
 int comparar_itens_ranqueados(const ItemRanqueado *a, const ItemRanqueado *b) {
     if (a == NULL || b == NULL) {

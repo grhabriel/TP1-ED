@@ -1,5 +1,5 @@
 #include <stdlib.h>
-#include "fila.h"
+#include "../include/fila.h"
 
 /*
  * Célula interna da fila encadeada, armazenando o ponteiro para Encomenda.

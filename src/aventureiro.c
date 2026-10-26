@@ -1,6 +1,6 @@
 #include <stdlib.h>
-#include "aventureiro.h"
-#include "util.h"
+#include "../include/aventureiro.h"
+#include "../include/util.h"
 
 Aventureiro *criar_aventureiro(int id, const char *nome) {
     if (nome == NULL) {
